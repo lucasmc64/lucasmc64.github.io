@@ -11,6 +11,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
+    min-width: 370px;
 }
 
 /* +-+-+-+-+- General classes -+-+-+-+-+ */
@@ -27,6 +28,7 @@ div.background {
     position: relative;
     overflow: hidden;
     width: 100%;
+    min-width: 370px;
     height: 480px;
     border-radius: 0 0 16px 16px;
 }
@@ -81,6 +83,7 @@ header {
     padding: 40px 0;
     text-transform: uppercase;
     color: #FFFFFF;
+    gap: 32px;
 }
 
 header h1 {
@@ -93,7 +96,7 @@ header ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 0 40px;
+    gap: 32px;
 }
 
 header ul li {
@@ -106,7 +109,7 @@ header ul li {
 /* +-+-+-+-+- Card -+-+-+-+-+ */
 
 section.card {
-    margin-top: -380px;
+    margin-top: -371px;
     min-height: 480px;
     background-color: #FFFFFF;
     border-radius: 16px;
@@ -179,6 +182,7 @@ section.info h3 {
 section.info p,
 section.info ul.sub-info {
     font-size: 14px;
+    line-height: 20px;
     color: #586069;
     cursor: default;
 }
@@ -245,6 +249,13 @@ section.info ul.contact a:hover li img {
     }
 }
 
+
+@media screen and (max-width: 951px) {
+    section.info {
+        padding: 24px 0;
+    }
+}
+
 @media screen and (max-width: 800px) {
     section.card {
         grid-template-columns: 1fr;
@@ -261,7 +272,13 @@ section.info ul.contact a:hover li img {
     section.info {
         margin: 0 auto;
         max-width: 480px;
-        height: 400px;
+        height: 380px;
+        padding: 0 24px;
+    }
+
+    section.info ul.contact {
+        padding-top: 4px;
+        gap: 20px;
     }
 
     section.info ul.contact a li {
@@ -269,7 +286,8 @@ section.info ul.contact a:hover li img {
         height: 32px;
         transform: translate(0, 0);
     }
-
+    
+    section.info ul.contact a,
     section.info ul.contact a:hover li {
         width: 32px;
         height: 32px;
@@ -281,25 +299,24 @@ section.info ul.contact a:hover li img {
 }
 
 @media screen and (max-width: 548px) {
+    .container {
+        margin: 0 16px;
+    }
+}
+@media screen and (max-width: 508px) {
     section.info {
-        height: 434px;
+        height: 420px;
     }
 }
 
-@media screen and (max-width: 504px) {
+@media screen and (max-width: 464px) {
     section.info {
-        height: 452px;
+        height: 438px;
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 386px) {
     section.info {
-        height: 470px;
-    }
-}
-
-@media screen and (max-width: 408px) {
-    section.info {
-        height: 488px;
+        height: 456px;
     }
 }
