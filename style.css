@@ -213,7 +213,7 @@ section.info ul.contact {
     gap: 16px;
 }
 
-section.info ul.contact li {
+section.info ul.contact a {
     width: 18px;
     height: 18px;
     transform: translate(4px, 4px);
@@ -226,18 +226,18 @@ section.info ul.contact li {
                 linear-gradient(270deg, rgba(62, 255, 175, 0.8), rgba(0,0,0,0) 70.71%);
 }
 
-section.info ul.contact li img {
+section.info ul.contact li a img {
     transform: translate(-4px, -4px);
 }
 
-section.info ul.contact a,
-section.info ul.contact a:hover li {
+section.info ul.contact li,
+section.info ul.contact li:hover a {
     width: 28px;
     height: 28px;
     transform: translate(0, 0);
 }
 
-section.info ul.contact a:hover li img {
+section.info ul.contact li:hover a img {
     transform: translate(0, 0);
 }
 
