@@ -281,19 +281,19 @@ section.info ul.contact li:hover a img {
         gap: 20px;
     }
 
-    section.info ul.contact a li {
+    section.info ul.contact li a {
         width: 32px;
         height: 32px;
         transform: translate(0, 0);
     }
     
-    section.info ul.contact a,
-    section.info ul.contact a:hover li {
+    section.info ul.contact li a,
+    section.info ul.contact li a:hover {
         width: 32px;
         height: 32px;
     }
 
-    section.info ul.contact a li img {
+    section.info ul.contact li a img {
         transform: translate(0, 0);
     }
 }
