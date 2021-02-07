@@ -112,7 +112,7 @@ header ul li {
 
 /* +-+-+-+-+- Card -+-+-+-+-+ */
 
-section.card {
+div.card {
     margin-top: -371px;
     min-height: 480px;
     background-color: #FFFFFF;
@@ -136,15 +136,16 @@ section.card {
 
 /* +-+-+-+-+- Image -+-+-+-+-+ */
 
-section.image {
-    background-image: url('/img/me.webp');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+div.image {
     width: 100%;
     height: 480px;
-    overflow: hidden;
+}
+
+div.image img {
+    width: 100%;
+    height: 100%;
     border-radius: 16px;
+    object-fit: cover;
 }
 
 /* +-+-+-+-+- Info -+-+-+-+-+ */
@@ -261,13 +262,13 @@ section.info ul.contact li:hover a img {
 }
 
 @media screen and (max-width: 800px) {
-    section.card {
+    div.card {
         grid-template-columns: 1fr;
         margin-bottom: 48px;
         gap: 24px;
     }
 
-    section.image {
+    div.image {
         margin: 0 auto;
         max-width: 480px;
         height: 400px;
