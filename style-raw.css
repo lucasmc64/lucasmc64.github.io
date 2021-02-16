@@ -41,10 +41,10 @@ div.background::before {
     z-index: -1;
     top: 0%;
     left: 0%;
-    background-image: 
-        linear-gradient(30deg, rgba(60, 175, 255, 0.8), transparent 70.71%),
-        linear-gradient(150deg,rgba(255, 120, 200, 0.8), transparent 70.71%),
-        linear-gradient(270deg, rgba(60, 255, 175, 0.8), transparent 70.71%);
+    background: 
+        linear-gradient(30deg, rgba(120, 200, 255, 0.8), rgba(0,0,0,0) 70.71%),
+        linear-gradient(150deg,rgba(255, 120, 200, 0.8), rgba(0,0,0,0) 70.71%),
+        linear-gradient(270deg, rgba(120, 255, 200, 0.8), rgba(0,0,0,0) 70.71%);
     animation: 16s ease-in-out infinite infinity-colors;
 }
 
@@ -202,11 +202,6 @@ section.info ul.sub-info li {
     gap: 8px;
 }
 
-section.info ul.sub-info li img,
-section.info ul.contact li img {
-    width: 20px;
-}
-
 section.info ul.contact {
     list-style-type: none;
     min-height: 28px;
@@ -214,20 +209,21 @@ section.info ul.contact {
     gap: 16px;
 }
 
-section.info ul.contact a {
-    width: 18px;
-    height: 18px;
+section.info ul.contact li a {
+    width: 20px;
+    height: 20px;
     transform: translate(4px, 4px);
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(30deg, rgba(120, 201, 255, 0.8), rgba(0,0,0,0) 70.71%),
-                linear-gradient(150deg,rgba(255, 120, 199, 0.8), rgba(0,0,0,0) 70.71%),
-                linear-gradient(270deg, rgba(62, 255, 175, 0.8), rgba(0,0,0,0) 70.71%);
+    background: 
+        linear-gradient(30deg, rgba(120, 200, 255, 0.8), rgba(0,0,0,0) 70.71%),
+        linear-gradient(150deg,rgba(255, 120, 200, 0.8), rgba(0,0,0,0) 70.71%),
+        linear-gradient(270deg, rgba(120, 255, 200, 0.8), rgba(0,0,0,0) 70.71%);
 }
 
-section.info ul.contact li a img {
+section.info ul.contact li a svg {
     transform: translate(-4px, -4px);
 }
 
@@ -238,7 +234,7 @@ section.info ul.contact li:hover a {
     transform: translate(0, 0);
 }
 
-section.info ul.contact li:hover a img {
+section.info ul.contact li:hover a svg {
     transform: translate(0, 0);
 }
 
@@ -294,7 +290,7 @@ section.info ul.contact li:hover a img {
         height: 32px;
     }
 
-    section.info ul.contact li a img {
+    section.info ul.contact li a svg {
         transform: translate(0, 0);
     }
 }
