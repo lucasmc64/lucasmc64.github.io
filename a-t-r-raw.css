@@ -46,9 +46,6 @@ section.info ul.contact li:hover a {
     width: 32px;
     height: 32px;
     transform: translate(0, 0);
-}
-
-section.info ul.contact li:hover a {
     border-radius: 8px;
 }
 
@@ -68,7 +65,6 @@ section.info ul.contact li:hover a span {
         margin: 0 36px;
     }
 }
-
 
 @media screen and (max-width: 951px) {
     section.info {
@@ -92,28 +88,58 @@ section.info ul.contact li:hover a span {
     section.info {
         margin: 0 auto;
         max-width: 480px;
-        height: 380px;
+        height: 440px;
         padding: 0 24px;
     }
 
     section.info ul.contact {
         padding-top: 4px;
-        gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
     }
 
-    section.info ul.contact li a {
-        width: 32px;
-        height: 32px;
+    section.info ul.contact li {
+        width: 100%;
+        height: 48px;
+    }
+
+    section.info ul.contact li a,
+    section.info ul.contact li:hover a {
+        width: 100%;
+        height: 48px;
+        box-sizing: content-box;
         border-radius: 8px;
         transform: translate(0, 0);
+        display: grid;
+        grid-template-columns: 48px 1fr;
     }
 
-    section.info ul.contact li a svg {
+    section.info ul.contact li a svg,
+    section.info ul.contact li:hover a svg {
         transform: translate(0, 0);
+        align-self: center;
+        justify-self: center;
     }
 
+    section.info ul.contact li a span,
     section.info ul.contact li:hover a span {
-        animation: 0.2s ease-in-out 0s forwards running show-lable;
+        opacity: 1;
+        transform: translateY(0);
+        color: #586069;
+        font-size: 12px;
+        font-weight: 600;
+        transition: none;
+        text-align: initial;
+        background-color: initial;
+        border-radius: initial;
+        padding: 0;
+        box-shadow: none;
+        position: initial;
+        transition: none;
+        align-self: center;
+        justify-self: initial;
+        animation: none;
     }
 }
 
@@ -124,18 +150,23 @@ section.info ul.contact li:hover a span {
 }
 @media screen and (max-width: 508px) {
     section.info {
-        height: 420px;
+        height: 480px;
     }
 }
 
 @media screen and (max-width: 464px) {
     section.info {
-        height: 438px;
+        height: 498px;
+    }
+
+    section.info ul.contact li a,
+    section.info ul.contact li:hover a {
+        grid-template-columns: 40px 1fr;
     }
 }
 
 @media screen and (max-width: 386px) {
     section.info {
-        height: 456px;
+        height: 516px;
     }
 }
