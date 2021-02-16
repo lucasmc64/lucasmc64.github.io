@@ -233,10 +233,8 @@ section.info ul.contact li a svg {
 }
 
 section.info ul.contact li a span {
-    display: none;
-    visibility: hidden;
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(-100vh);
     color: #232329;
     font-size: 12px;
     font-weight: 600;
@@ -247,6 +245,7 @@ section.info ul.contact li a span {
     text-align: center;
     position: absolute;
     top: 40px;
+    transition: none;
 }
 
 section.info ul.contact li,
@@ -265,14 +264,12 @@ section.info ul.contact li:hover a svg {
 }
 
 section.info ul.contact li:hover a span {
-    display: initial;
+    transform: translateY(0);
     animation: 0.2s ease-in-out 0.4s forwards running show-lable;
 }
 
 @keyframes show-lable {
     to {
-        transform: translateY(0);
-        visibility: visible;
         opacity: 1;
     }
 }
@@ -329,7 +326,6 @@ section.info ul.contact li:hover a span {
     }
 
     section.info ul.contact li:hover a span {
-        display: initial;
         animation: 0.2s ease-in-out 0s forwards running show-lable;
     }
 }
