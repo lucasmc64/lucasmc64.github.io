@@ -41,7 +41,7 @@ div.background::before {
     z-index: -1;
     top: 0%;
     left: 0%;
-    background: 
+    background:
         linear-gradient(30deg, rgba(120, 200, 255, 0.8), rgba(0,0,0,0) 70.71%),
         linear-gradient(150deg,rgba(255, 120, 200, 0.8), rgba(0,0,0,0) 70.71%),
         linear-gradient(270deg, rgba(120, 255, 200, 0.8), rgba(0,0,0,0) 70.71%);
@@ -209,7 +209,12 @@ section.info ul.contact {
     gap: 16px;
 }
 
+section.info ul.contact li {
+    position: relative;
+}
+
 section.info ul.contact li a {
+    text-decoration: none;
     width: 20px;
     height: 20px;
     transform: translate(4px, 4px);
@@ -217,7 +222,7 @@ section.info ul.contact li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: 
+    background:
         linear-gradient(30deg, rgba(120, 200, 255, 0.8), rgba(0,0,0,0) 70.71%),
         linear-gradient(150deg,rgba(255, 120, 200, 0.8), rgba(0,0,0,0) 70.71%),
         linear-gradient(270deg, rgba(120, 255, 200, 0.8), rgba(0,0,0,0) 70.71%);
@@ -227,15 +232,49 @@ section.info ul.contact li a svg {
     transform: translate(-4px, -4px);
 }
 
+section.info ul.contact li a span {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(8px);
+    color: #232329;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 8px 16px;
+    box-shadow: 0 2px 6px 2px  rgba(35, 35, 41, 0.1);
+    text-align: center;
+    position: absolute;
+    top: 40px;
+}
+
 section.info ul.contact li,
 section.info ul.contact li:hover a {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     transform: translate(0, 0);
+}
+
+section.info ul.contact li:hover a {
+    border-radius: 8px;
 }
 
 section.info ul.contact li:hover a svg {
     transform: translate(0, 0);
+}
+
+section.info ul.contact li:hover a span {
+    display: initial;
+    animation: 0.2s ease-in-out 0.4s forwards running show-lable;
+}
+
+@keyframes show-lable {
+    to {
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 /* +-+-+-+-+- Responsiveness -+-+-+-+-+ */
@@ -281,17 +320,17 @@ section.info ul.contact li:hover a svg {
     section.info ul.contact li a {
         width: 32px;
         height: 32px;
+        border-radius: 8px;
         transform: translate(0, 0);
-    }
-    
-    section.info ul.contact li a,
-    section.info ul.contact li a:hover {
-        width: 32px;
-        height: 32px;
     }
 
     section.info ul.contact li a svg {
         transform: translate(0, 0);
+    }
+
+    section.info ul.contact li:hover a span {
+        display: initial;
+        animation: 0.2s ease-in-out 0s forwards running show-lable;
     }
 }
 
