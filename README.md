@@ -1,20 +1,20 @@
 ![Contact page](readme-images/cover.png)
 
-# Contact page :telephone:
+# :telephone: Contact page
 
-## Some details :scroll:
+## :scroll: Some details
 
-- The front end is made with HTML5, CSS3 and JavaScript.
+- The front-end is made with HTML5, CSS3 and JavaScript.
 
-## How to run the project on my machine? :thinking:
+## :thinking: How to run the project on my machine?
 
 The first step is to clone the project, either via terminal or GitHub Desktop, or even by downloading the compressed file (.zip). After that, go ahead.
 
-### Requirements :hammer_and_wrench:
+### :hammer_and_wrench: Requirements
 
 There are no requirements to run the project on your computer! Just double click on the *index.html* file and it will open in your default browser.
 
-## If everything went well... :tada:
+## :tada: If everything went well...
 
 Now you are running the project beautifully!
 
