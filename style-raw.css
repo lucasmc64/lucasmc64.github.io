@@ -174,7 +174,10 @@ section.info ul.contact li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(30deg, rgba(120, 200, 255, 0.8), rgba(0, 0, 0, 0) 70.71%), linear-gradient(150deg, rgba(255, 120, 200, 0.8), rgba(0, 0, 0, 0) 70.71%), linear-gradient(270deg, rgba(120, 255, 200, 0.8), rgba(0, 0, 0, 0) 70.71%);
+    background: 
+        linear-gradient(30deg, rgba(120, 200, 255, 0.8), rgba(0, 0, 0, 0) 70.71%),
+        linear-gradient(150deg, rgba(255, 120, 200, 0.8), rgba(0, 0, 0, 0) 70.71%),
+        linear-gradient(270deg, rgba(120, 255, 200, 0.8), rgba(0, 0, 0, 0) 70.71%);
 }
 
 section.info ul.contact li a svg {

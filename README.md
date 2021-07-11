@@ -2,11 +2,9 @@
 
 # Contact page :telephone:
 
-> :brazil: Caso prefira ler em outra língua, esse README foi escrito também em português. Clique [AQUI](/README_pt-br.md) para acessar.
-
 ## Some details :scroll:
 
-* The front end is made with HTML5, CSS3 and JavaScript.
+- The front end is made with HTML5, CSS3 and JavaScript.
 
 ## How to run the project on my machine? :thinking:
 
@@ -19,3 +17,11 @@ There are no requirements to run the project on your computer! Just double click
 ## If everything went well... :tada:
 
 Now you are running the project beautifully!
+
+## :memo: License
+
+This project is under the MIT license. See the [LICENSE](LICENSE) for more information.
+
+---
+
+Made with :purple_heart: by Lucas Coutinho :wave: [Get in touch!](https://www.linkedin.com/in/lucasmc64/)
