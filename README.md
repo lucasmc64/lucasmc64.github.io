@@ -1,4 +1,4 @@
-![Contact page](readme-images/cover.png)
+![Contact page](readme/cover.png)
 
 # :telephone: Contact page
 
@@ -12,7 +12,7 @@ The first step is to clone the project, either via terminal or GitHub Desktop, o
 
 ### :hammer_and_wrench: Requirements
 
-There are no requirements to run the project on your computer! Just double click on the *index.html* file and it will open in your default browser.
+There are no requirements to run the project on your computer! Just double click on the _index.html_ file and it will open in your default browser.
 
 ## :tada: If everything went well...
 

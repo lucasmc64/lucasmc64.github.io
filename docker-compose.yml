@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    image: portfolio
+    build: .
+    container_name: portfolio
+    restart: always
+    ports:
+      - "3000:80"
